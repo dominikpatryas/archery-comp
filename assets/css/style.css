@@ -19,25 +19,27 @@ body {
     line-height: 25px;
     background-color: #1a1a1d;
     font-family: 'Spectral', serif;
-    color: #ffffff;
+    color: #000000;
 
 }
 
 .container{
     width:80%;
     margin:auto;
+    background-color: blanchedalmond;
     /* overflow:hidden; */
 }
 /* form{
     margin:0px; padding:0px; display:inline;
    } */
 a {
-    color: #ffffff;
+    color: #231f1f;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: none;
+    color: #231f1f;
 
 }
 
@@ -104,7 +106,7 @@ ul {
 header {
     width: 100%;
    border-bottom: 4px #3cb0fd solid;
-   background-color: purple;
+   background-color: rgb(29, 111, 66);
 }               
 
 .header_wrap {
@@ -113,15 +115,24 @@ header {
 }
 
 nav {
-
-    margin-right: 200px;
+    /* background-color: red;   */
+    margin-right: 100px;
 }
 
 nav ul li {
     display: inline-block;
     padding: 12px 20px;
-    font-size: 33px;
+    font-size: 26px;
     text-align: center;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+    border-radius: 5px;
+}
+
+nav ul li:hover {
+background-color: rgb(255, 181, 22);
 }
 
 .header_login {
@@ -130,9 +141,34 @@ nav ul li {
     justify-content: flex-end;
     width: 100%;
     margin: 0 auto;
+    /* background-color: green; */
 }
+#hello_user {
+  /* background-color: orange; */
+  width: 550px;
+  text-align: center;
+  margin: auto 0;
+  height: 50px;
+  -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+    border-radius: 5px;
+}
+
+#hello_user:hover {
+  background-color: rgb(164, 114, 6);
+}
+
 
 .header_login input {
 }
                     /* FINISH HEADER */
+
+/* INDEX */
+.main-content {
+  width: 60%;
+  margin: 0 auto;
+}
+/*FINISH OF INDEX */
 
