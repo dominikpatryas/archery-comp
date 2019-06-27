@@ -16,6 +16,8 @@ require("includes/form_handlers/login_handler.php");
     <!-- JS -->
     <meta charset="UTF-8">
     <meta http-equiv="Content-Language" content="pl">
+    <script src="assets/js/popper.js"> </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/bootstrap.js"> </script>
     <script src="assets/js/bootbox.min.js"> </script>
@@ -39,12 +41,8 @@ require("includes/form_handlers/login_handler.php");
             <div class="header_login">
                 <nav>
                     <ul>
-                        <?php if (isset($_SESSION['username'])) echo "
-                        <li> <a href='includes/handlers/logout.php'><i class='fa fa-sign-out-alt'></i> Wyloguj się</a>
-                        </li>
                         
-                        "?>
-                        
+
                         <li><a href="#"><i class="fa fa-bullseye"></i> Aktualne zawody</a></li>
                         <li><a href="#"><i class="fa fa-table"></i> Metryczka</a></li>
                         <li><a href="#"><i class="fa fa-list-ol"></i> Ranking</a></li>
@@ -59,11 +57,30 @@ require("includes/form_handlers/login_handler.php");
                     </form>   "; 
                     }
                     else  { ?>
-                    <a href="profile.php">
-                <div id="hello_user">
-                        <h3> <i class="fa fa-user-cog"> <?php echo $_SESSION['username']; ?></i></h4>
-                </div>
-                </a>
+                    
+                    <div id="hello_user">
+                        <div class="dropdown show">
+                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user-cog"></i> <?php echo $_SESSION['username']; ?>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a href='profile.php' class="dropdown-item" href="#"><i class='fa fa-user'></i> Mój profil</a>
+                                <a href='includes/handlers/logout.php' class="dropdown-item" href="#"><i class='fa fa-sign-out-alt'></i> Wyloguj</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+
+
+               
+
+
+
+
+
 
                 <?php
                     }
