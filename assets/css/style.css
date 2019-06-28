@@ -165,22 +165,42 @@ background-color: rgb(255, 181, 22);
                     /* FINISH HEADER */
 
 /* INDEX */
+.full-page {
+  display: flex;
+  background-color: #a49d9d;
+}
 .main-content {
+  background-color: #2980b9;
+
   width: 60%;
   margin: 0 auto; 
   color: #fff;
 }
 
+.competition_results {
+  background-color: yellowgreen;
+  width: 25%;
+  border: 1px #000000 solid;
+  border-radius: 3px;
+}
+.competition_results h4 {
+  padding: 20px 20px 10px 20px;
+}
 .announcement_img {
   margin: 0 0 10px 0;
+  
 }
-
+.announcement_img img {
+  width: 100%;
+  padding: 20px;
+}
 .announcement {
   margin-top: 20px;
 }
 
 .announcement_description {
   margin:0 0 40px 0;
+  padding: 0 20px 20px 20px;
 }
 /*FINISH OF INDEX */
 
