@@ -204,3 +204,41 @@ background-color: rgb(255, 181, 22);
 }
 /*FINISH OF INDEX */
 
+/* PROFILE */
+.archer-content {
+  display: flex;
+}
+
+.archer_sidebar{
+  background-color: #a49d9d;
+  border: 1px #000000 solid;
+  border-radius: 3px;
+  width: 25%;
+  height: 100%;
+  margin-right: 100px;
+}
+
+.archer_img {
+  width: 100%;
+  padding: 10px;
+}
+
+.archer_img img{
+  width: 100%;
+ /* height: ; */
+ border-radius: 50%;
+}
+
+.archer_description {
+  padding: 10px;
+  color: #fff;
+}
+
+.green {
+  color: rgb(15, 123, 15);
+}
+
+.red {
+  color: red;
+}
+/* FINISH OF PROFILE */
