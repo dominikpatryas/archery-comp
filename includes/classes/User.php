@@ -37,12 +37,6 @@ class User {
     }
 
     public function getDateMedical() {
-        // $date_medical = new DateTime($this->user['date_medical']);
-        // $now = date_format(new DateTime(), 'Y-m-d');
-
-        // $interval = $now->diff($date_medical);
-        //     return $interval->format('%R%a days');
-
             $dStart = new DateTime();
             $dEnd  = new DateTime($this->user['date_medical']);
             $dDiff = $dStart->diff($dEnd);
@@ -52,6 +46,15 @@ class User {
             }        else return "<span class='red'> Nieaktualne </span> (" . $this->user['date_medical'] .")"; 
 
       
+    }
+
+    public function changeMainPhoto($path) {
+        $username = $this->user['username'];
+        $query = mysqli_query($this->con, "UPDATE users SET photo_url='$path' WHERE username='$username'");
+    }
+
+    public function getPhotoPath() {
+        return $this->user['photo_url'];
     }
 }
 

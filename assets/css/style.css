@@ -225,8 +225,8 @@ background-color: rgb(255, 181, 22);
 
 .archer_img img{
   width: 100%;
- /* height: ; */
- border-radius: 50%;
+ height: 250px;
+ border-radius: 25%;
 }
 
 .archer_description {
