@@ -115,7 +115,7 @@ header {
 nav {
     /* background-color: red;   */
     /* margin-right: 100px; */
-    width: 900px;
+    width: 100%;
 }
 
 nav ul li {
@@ -136,7 +136,7 @@ background-color: rgb(255, 181, 22);
 
 .header_login {
     display: flex;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     justify-content: flex-end;
     width: 100%;
     margin: 0 auto;
@@ -160,7 +160,9 @@ background-color: rgb(255, 181, 22);
 
 }
 
-.header_login input {
+.header_login input[type='text'], .header_login input[type='password'] {
+  width: 200px;
+  margin-bottom: 5px;
 }
                     /* FINISH HEADER */
 
@@ -229,6 +231,17 @@ background-color: rgb(255, 181, 22);
  border-radius: 25%;
 }
 
+.archer_img input {
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  height: 100%;
+}
+
+.archer_img form {
+text-align: center;
+}
+
+
 .archer_description {
   padding: 10px;
   color: #fff;
@@ -241,4 +254,16 @@ background-color: rgb(255, 181, 22);
 .red {
   color: red;
 }
+
+.archer-main-content {
+  width: 60%;
+  height: 100%;
+  background-color: teal;
+}
 /* FINISH OF PROFILE */
+
+/* REGISTER */
+.form_register {
+  display: block;
+}
+/* FINISH OF REGISTER */

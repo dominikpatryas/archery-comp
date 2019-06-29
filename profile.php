@@ -5,14 +5,14 @@ $user_obj = new User($con, $_SESSION['username']);
 
 ?>
 
+<script src="assets/js/profile.js"></script>
 
 <div class="archer-content">
     <div class="archer_sidebar">
         <div class="archer_img">
             <img src="<?php echo $user_obj->getPhotoPath(); ?>" alt="">
 
-            
-
+            <div class="upload_main_photo" style='display:none;'> 
             <form method="post" enctype="multipart/form-data">
                 <input type="file" name="main_photo" >
                 <input type="submit" value="Załaduj">
@@ -47,12 +47,12 @@ $user_obj = new User($con, $_SESSION['username']);
                         echo $phpFileUploadErrors[$_FILES['main_photo']['error']];
                     }
                     elseif ($ext_error) {
-                        echo "Nieprawidłowy format (PNG, JPG, JPEG)";
+                        echo "<span class='red'> Nieprawidłowy format (PNG, JPG, JPEG) </span>";
                     }
                     else {
-                        echo 'Poprawnie zmieniono zdjęcie.';
+                        // echo "<span style='color:darkgreen'> Poprawnie zmieniono zdjęcie. </span>";
                     }
-                    if (!$_FILES['main_photo']['size'] == 0) {
+                    if (!$_FILES['main_photo']['size'] == 0 && !$ext_error) {
                     move_uploaded_file($_FILES['main_photo']['tmp_name'], 'assets/images/' . $_FILES['main_photo']['name']);
 
                     $username = $_SESSION['username'];
@@ -75,7 +75,7 @@ $user_obj = new User($con, $_SESSION['username']);
                 }
 
             ?>
-
+</div>
             <hr>
         </div>
         <div class="archer_description">
@@ -87,6 +87,13 @@ $user_obj = new User($con, $_SESSION['username']);
         </div>
     </div>
     <div class="archer-main-content">
-        <h1>test</h1>
+        <h2>Zawody w których uczestniczyłem:</h2>
+        <ul>
+            <li>Zawody w Żywcu......</li>
+            <li>Zawody w Żywcu......</li>
+            <li>Zawody w Żywcu......</li>
+            <li>Zawody w Żywcu......</li>
+            <li>Zawody w Żywcu......</li>
+        </ul>
     </div>
 </div>

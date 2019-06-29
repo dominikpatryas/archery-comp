@@ -43,6 +43,7 @@ require("includes/form_handlers/login_handler.php");
                     <ul>
                         
 
+                        <li><a href="index.php"><i class="fa fa-bullhorn"></i> Ogłoszenia</a></li>
                         <li><a href="#"><i class="fa fa-bullseye"></i> Aktualne zawody</a></li>
                         <li><a href="#"><i class="fa fa-table"></i> Metryczka</a></li>
                         <li><a href="#"><i class="fa fa-list-ol"></i> Ranking</a></li>
