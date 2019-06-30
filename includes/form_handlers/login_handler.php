@@ -11,6 +11,7 @@ $password = md5($password);
     $em_query = mysqli_query($con,"SELECT * FROM users WHERE email='$email' AND password='$password'");
     $num_rows = mysqli_num_rows($em_query);
 
+   
     if ($num_rows == 1) {
         $row = mysqli_fetch_array($em_query);
         $username = $row['username'];

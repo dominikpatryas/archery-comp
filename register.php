@@ -32,6 +32,8 @@ require 'includes/form_handlers/login_handler.php';
            else if(in_array("Twoje hasło musi mieć mieć w przedziale od 5 do 30 znaków", $error_array)) echo "Twoje hasło musi mieć mieć w przedziale od 5 do 30 znaków<br>";
             else if(in_array("Hasła różnią się od siebie", $error_array)) echo "Hasła różnią się od siebie<br>"; ?>
 <br>
+<input placeholder="Data urodzin"  type="text" onfocus="(this.type='date')" name="register_birth"   required> 
+<br>
             <input type="password" name="register_password2" placeholder="Potwierdź hasło" required>
             <br>
             <a href="#" id="signin" class="signin">Masz już konto? Zaloguj się</a>

@@ -44,10 +44,10 @@ require("includes/form_handlers/login_handler.php");
                         
 
                         <li><a href="index.php"><i class="fa fa-bullhorn"></i> Ogłoszenia</a></li>
-                        <li><a href="#"><i class="fa fa-bullseye"></i> Aktualne zawody</a></li>
-                        <li><a href="#"><i class="fa fa-table"></i> Metryczka</a></li>
-                        <li><a href="#"><i class="fa fa-list-ol"></i> Ranking</a></li>
-                        <li><a href="#"><i class="fa fa-network-wired"></i> Drabinka</a></li>
+                        <li><a href="competition.php"><i class="fa fa-bullseye"></i> Aktualne zawody</a></li>
+                        <li><a href="metryczka.php"><i class="fa fa-table"></i> Metryczka</a></li>
+                        <li><a href="ranking.php"><i class="fa fa-list-ol"></i> Ranking</a></li>
+                        <li><a href="ladder.php"><i class="fa fa-network-wired"></i> Drabinka</a></li>
                     </ul>
                 </nav>
                 <?php if (!isset($_SESSION['username'])) {
