@@ -41,8 +41,11 @@ require("includes/form_handlers/login_handler.php");
             <div class="header_login">
                 <nav>
                     <ul>
-                        
+                        <?php  if (isset($_SESSION['is_judge'])) {
+                       echo "<li><a href='create_competition.php'><i class='fa fa-plus-square'></i> Stwórz zawody</a></li>";
 
+                        }
+                        ?>
                         <li><a href="index.php"><i class="fa fa-bullhorn"></i> Ogłoszenia</a></li>
                         <li><a href="competition.php"><i class="fa fa-bullseye"></i> Aktualne zawody</a></li>
                         <li><a href="metryczka.php"><i class="fa fa-table"></i> Metryczka</a></li>

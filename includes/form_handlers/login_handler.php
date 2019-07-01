@@ -16,6 +16,10 @@ $password = md5($password);
         $row = mysqli_fetch_array($em_query);
         $username = $row['username'];
 
+        if ($row['is_judge'] == 'yes') {
+            $_SESSION['is_judge'] = 'yes';
+        }
+
         $_SESSION['username'] = $username;
         array_push($error_array, "Zalogowano");
 
