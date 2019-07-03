@@ -267,3 +267,17 @@ text-align: center;
   display: block;
 }
 /* FINISH OF REGISTER */
+
+/* CREATE COMPETITION */
+.create-competition-content {
+text-align: center;
+background-color: red;
+}
+
+.create-competition-content input {
+  margin:5px;
+  padding: 10px;
+  width: 350px;
+}
+
+/* FINISH OF CREATE COMPETITION */
